@@ -8,13 +8,10 @@
 // 
 // Techically speaking, complexity of this approach still seems to be O(n^2 / k) 
 // even if k is quite big, and we can make it even bigger by adjusting grid size.
-// Im not sure if this is what was meant by "better than O(n^2)".
 // 
 // With further and further optimizations it becomes quite hard to gauge performance, 
 // because collision code already takes about 5% of the cycle, with good 90% taken by SFML render.
 // 
-// Now that I think about it, a sort-and-sweep-based broadphase would probably be better but oh well, time's up.
-//
 
 #include "SFML/Graphics.hpp"
 #include "MiddleAverageFilter.h"
